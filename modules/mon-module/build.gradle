@@ -1,0 +1,19 @@
+plugins {
+	id 'com.axelor.app'
+}
+axelor {
+	title "Open Auction Pricing"
+	description "Open Auction - Tarification"
+} 
+
+dependencies {
+	api "com.axelor.apps:axelor-base:${openSuiteVersion}"
+	api "com.axelor.apps:axelor-account:${openSuiteVersion}"
+	api "com.axelor.apps:axelor-crm:${openSuiteVersion}"
+}
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(11))
+    }
+}
